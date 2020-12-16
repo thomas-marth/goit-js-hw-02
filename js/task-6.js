@@ -2,6 +2,22 @@ let input;
 const numbers = [];
 let total = 0;
 
+while (input !== null) {
+  input = prompt('Введите число');
+  const currentNumber = Number(input);
+  if (Number.isNaN(currentNumber)) {
+    alert('Было введено не число, попробуйте еще раз');
+  } else {
+    numbers.push(currentNumber);
+  }
+}
+
+for (const number of numbers) {
+  total += number;
+}
+
+console.log(`Общая сумма чисел равна ${total}`);
+
 /*
  * Напиши скрипт со следующим функционалом:
  *
@@ -14,3 +30,5 @@ let total = 0;
  * необходимо посчитать сумму всех элементов массива и записать ее в переменную total.
  * Используй цикл for или for...of. После чего в консоль выведи строку 'Общая сумма чисел равна [сумма]'.
  */
+
+//
