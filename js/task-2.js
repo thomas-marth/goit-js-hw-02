@@ -26,3 +26,10 @@ console.log(
 console.log(
   calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
 ); // 120
+
+/*
+ *  Напиши скрипт подсчета стоимости гравировки украшений.
+ *  Для этого создай функцию calculateEngravingPrice(message, pricePerWord) принимающую строку
+ *  (в строке будут только слова и пробелы) и цену гравировки одного слова,
+ *  и возвращающую цену гравировки всех слов в строке.
+ */
