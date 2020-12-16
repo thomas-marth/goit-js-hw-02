@@ -1,11 +1,26 @@
-const checkForSpam = function (message) {
-  let stopWord =
-    message.toLowerCase().includes('spam') ||
-    message.toLowerCase().includes('sale');
+// Вариант 1 (через массив)
 
-  stopWord === true ? stopWord : message;
-  return stopWord;
+const checkForSpam = function (message) {
+  const spamArray = ['spam', 'sale'];
+  for (const stopWord of spamArray) {
+    spamMessage = message.toLowerCase().includes(stopWord);
+    if (spamMessage) {
+      return true;
+    }
+  }
+  return false;
 };
+
+// Вариант 2 (рабочий)
+
+// const checkForSpam = function (message) {
+//   let stopWord =
+//     message.toLowerCase().includes('spam') ||
+//     message.toLowerCase().includes('sale');
+
+//   stopWord === true ? stopWord : message;
+//   return stopWord;
+// };
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
